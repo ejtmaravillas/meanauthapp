@@ -1,0 +1,22 @@
+{
+  "name": "meanauthapp",
+  "version": "1.0.0",
+  "description": "MEAN STACK APPLICATION with Authentication Password",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "mongoose":"*",
+    "bcryptjs":"*",
+    "core-js":"*",
+    "cors":"*",
+    "jsonwebtoken":"*",
+    "passport":"*",
+    "passport-jwt":"*"
+  },
+  "author": "Eli Joshua Maravillas",
+  "license": "ISC"
+}
