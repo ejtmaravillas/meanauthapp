@@ -39,6 +39,14 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,'public')));
 //Body Parser middleware
 app.use(bodyParser.json());
+
+//passport middleware
+
+require('./config/passport')(passport);
+
+app.use(passport.initialize());
+app.use(passport.session());
+
 //User Profile with variable users from /routes/users
 app.use('/users',users);
 //Index Route
